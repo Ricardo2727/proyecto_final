@@ -1,0 +1,230 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* General  */
+ul, ol, li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+
+/* ---------------------barra de navegacion */
+header nav ul li a{
+    color:#281612 ;
+}
+header nav ul li {
+    margin: 1rem;
+}
+
+header { 
+    background-color: #EBDCC9;
+    font-family:'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 1.2rem;
+    padding: 15px;
+}
+.header__logo{
+    border: #281612 3px solid;
+    padding: 10px;
+    margin: 10px;
+}
+
+.header__menuNav{
+    display: flex;
+    flex-wrap: wrap;
+    align-items:flex-end;
+    justify-content: space-between;
+}
+.header__menuLink{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: flex-end;
+    margin:1rem ;    
+}
+
+
+ /* .header_menuLinkInd{
+    display: flex;
+    width: 100px;
+}  */
+/* -----------------------------------Main general  */
+main { 
+    background-color: #EBDCC9;
+    font-family: 'Poppins', sans-serif;
+    }
+/* posicion central del h1 */
+div h1{
+    display:flex ;
+    justify-content: center;
+    padding: 30px;
+}
+#main_index_verde{ 
+    background-color: #4D7445;
+}
+#main_index_verde2{ 
+    background-color: #4D7445;
+}
+#main_bebidas_verde{ 
+    background-color: #4D7445;
+}
+#main_salados_verde{ 
+    background-color: #4D7445;
+}
+#main_dulces_verde{ 
+    background-color: #4D7445;
+}
+#main_promo_verde{ 
+    background-color: #4D7445;
+}
+#main_index_menu { 
+    background-color: #B03B2A;
+}
+#main_clubkop_ben{
+    background-color: #B03B2A;
+}
+/* --------------------------tamaño imagenes */
+.imgRecomDia{
+    width: 50%;
+    height: 50%;
+}
+.imgMenu{
+    width: 25%;
+    height: 25%;
+}
+.imgBebida{
+    width: 35%;
+    height: 35%;
+}
+.imgSalado{
+    width: 20%;
+    height: 20%; 
+}
+.imgDulces{
+    width: 20%;
+    height: 20%; 
+}
+.tamImgAuto{
+    max-width: 100%;   
+    width: auto;
+    height: auto;
+}
+.imgContainer{
+    text-align: center;
+}
+
+/* ------------Cajas Maestra//Esclavo */
+.boxEsclavo{
+    margin: 30px;
+}
+.boxMaster{
+    padding: 50px;
+}
+
+/* tamaño estilo texto main listados */
+main div ul li {
+    font-size: 20px;
+}
+main section ul li div {
+    font-size: 20px;
+}
+main div p {
+    font-style: italic;
+    /* texto de menu club ------------- */
+}
+main section div p {
+    font-style: normal;
+}
+
+/* ------------------------main index section club */
+/* tamaño club */
+.tamClubVerde{
+    background-color: #4D7445;
+    padding: 50px; 
+}
+.posH2{
+    padding-left: 40px;
+}
+/*----------botones section club*/
+.boton{
+    background-color: #B03B2A;
+    border-radius: 5px; ;
+    padding: 8px 14px;
+    margin-top: 100px;
+    width: 250px;  
+}
+.txtBoton {
+    text-align: center;
+}
+/* ingreso de txt */
+.intxt{
+    background-color: #EBDCC9;
+    color: gray;
+    border-radius: 2px;
+    border: inset;
+    width: 300px;
+}
+
+
+/* ------------------------------Footer general*/
+footer{ 
+    background-color: white;
+    font-family: 'Poppins', sans-serif;
+}
+footer ul li a  img{
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+}
+
+footer div {
+    padding: 30px;
+}
+
+/* -------------------Colores  */
+.colorCafe {
+    color:  #281612;
+}
+.colorVerde {
+    color: #4D7445;
+}
+.colorNaranja{
+    color:#B03B2A ;
+}
+.colorCrema{
+    color: #EBDCC9;
+}
+
+/* -----------------Colores de fondo */
+.colorFondoCafe{
+    background-color: #281612;
+}
+.colorFondoVerde{
+    background-color: #4D7445;
+}
+.colorFondoNaranja{
+    background-color: #B03B2A;
+}
+.colorFondoCrema{
+    background-color: #EBDCC9;
+}
+
+
+
+/* ---------------------------tamaños de Texto */
+.tamGrande {
+    font-size: 48px;
+}
+.tamMediano{
+    font-size: 30px;
+}
+.tamChico{
+    font-size: 15px;
+}
+
+
+
