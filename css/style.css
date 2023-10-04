@@ -127,10 +127,10 @@ div h1{
 
 /* tamaño estilo texto main listados */
 main div ul li {
-    font-size: 20px;
+    font-size: 1.5rem;
 }
 main section ul li div {
-    font-size: 20px;
+    font-size: 1.5rem;
 }
 main div p {
     font-style: italic;
@@ -217,13 +217,13 @@ footer div {
 
 /* ---------------------------tamaños de Texto */
 .tamGrande {
-    font-size: 48px;
+    font-size: 3rem;
 }
 .tamMediano{
-    font-size: 30px;
+    font-size: 2rem
 }
 .tamChico{
-    font-size: 15px;
+    font-size: 1rem
 }
 
 
