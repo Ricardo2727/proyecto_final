@@ -320,15 +320,49 @@ footer{
     font-family: 'Poppins', sans-serif;
 }
 footer ul li a  img{
-    width: 50px;
-    height: 50px;
-    border-radius: 10px;
+    width: 3.2rem;
+    height: 3.2rem;
+    border-radius: 5px;
 }
 
-footer div {
-    padding: 30px;
+.footer__stylerrss {
+    padding: 2.4rem 2rem 2rem 2rem;
+    display: flex;
+    width: 25rem;
+    height: 8rem;
+    justify-content: center;
 }
-
+.footer__flexImg{
+    display: flex;
+    flex-direction: row;
+    gap: 3rem;
+    align-items: center;
+    padding-left: 0rem;
+    margin-bottom: 0rem;
+}
+.footer__contacto{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0rem;
+    padding: 1rem 1rem 1rem 3rem;
+    width: 25rem;
+    height: 8rem;
+}
+.footer__conRrss{
+    display: flex;
+    flex-direction: column;
+}
+.footer__master{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+}
+.footer__logo{
+    border: #281612 1px solid;
+    padding: 10px;
+    margin: 2.4rem 0.625rem 0.625rem 0.625rem;
+}
 /* -------------------Colores  */
 .colorCafe {
     color:  #281612;
