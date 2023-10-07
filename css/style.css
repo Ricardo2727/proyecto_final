@@ -24,7 +24,7 @@ header {
     font-family:'Poppins', sans-serif;
     font-weight: 700;
     font-size: 1.2rem;
-    padding: 15px;
+    padding: 1rem;
 }
 .header__logo{
     border: #281612 1px solid;
@@ -316,8 +316,9 @@ main section div p {
 
 /* ------------------------------Footer general*/
 footer{ 
-    background-color: white;
+    background-color: #EBDCC9;
     font-family: 'Poppins', sans-serif;
+    padding: 1rem;
 }
 footer ul li a  img{
     width: 3.2rem;
@@ -347,19 +348,23 @@ footer ul li a  img{
     padding: 1rem 1rem 1rem 3rem;
     width: 25rem;
     height: 8rem;
+    color: #281612;
 }
 .footer__conRrss{
     display: flex;
     flex-direction: column;
 }
+.footer__p{
+    margin-bottom: 0rem;
+}
 .footer__master{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    
+    border-top: #281612 2px solid;
 }
 .footer__logo{
-    border: #281612 1px solid;
+    /* border: #281612 1px solid; */
     padding: 10px;
     margin: 2.4rem 0.625rem 0.625rem 0.625rem;
 }
