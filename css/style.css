@@ -120,6 +120,8 @@ div h2{
     flex-wrap: wrap;
     gap: 1rem;
     justify-content: center;
+    padding: 0rem;
+    margin-bottom: 0rem;
 }
 .main__flexCardEsclavoDul{
     display: flex;
@@ -127,6 +129,8 @@ div h2{
     flex-wrap: wrap;
     gap: 1rem;
     justify-content: center;
+    padding: 0rem;
+    margin-bottom: 0rem;
 }
 
 /* --------------------------tamaño imagenes */
@@ -293,12 +297,15 @@ main section div p {
 }
 .posH2{
     padding: 24px;
+    font-size: 24px;
+    font-weight: 700;
+
 }
 .clubkop__listCenter{
     display: flex;
     flex-direction: column;
-    width: 20rem;
-    height: 20rem;
+    width: 60rem;
+    height: auto;
     justify-content: center;
     align-items: center;
     padding: 0rem;
@@ -309,14 +316,17 @@ main section div p {
 }
 .clubkop__flex {
     display: flex;
+    height: auto;
     flex-direction: column;
     align-items: center;
+    gap: 2rem;
+    justify-content: center;
 }
 .clubkop__formCenter{
     display: flex;
     flex-direction: column;
-    width: 40rem;
-    height: 20rem;
+    /* width: 30rem; */
+    height: auto;
     justify-content: center;
     align-items: center;
 }
@@ -360,11 +370,15 @@ footer ul li a  img{
     height: 3.2rem;
     border-radius: 5px;
 }
+.footer__padNone {
+    padding: 0rem 2rem 2rem 2rem;
+    margin: 0rem;
+}
 
 .footer__stylerrss {
     padding: 2rem;
     display: flex;
-    width: 25rem;
+    width: auto;
     height: 8rem;
     justify-content: left;
 }
@@ -379,10 +393,10 @@ footer ul li a  img{
 .footer__contacto{
     display: flex;
     flex-direction: column;
-    margin-bottom: 0rem;
+    margin: 0rem;
     padding: 0.3rem;
-    width: 25rem;
-    height: 8rem;
+    width: auto;
+    height: auto;
     color: #281612;
 }
 .footer__conRrss{
@@ -452,18 +466,32 @@ div h3{
     /* color: #281612; */
 }
 .SD_Subtitulo{
-    font-weight: 700;
+    font-weight: 500;
     font-size: 1.3rem;
     font-style: normal;
     text-align: center;
     color: #281612c2;
 }
-
+.clubkop_Subtitulo{
+    font-weight: 500;
+    font-size: 1.3rem;
+    font-style: normal;
+    text-align: center;
+    color:#EBDCC9 ;
+}
 @media (max-width:992px){
     .tamGrande{
         font-size: 2.5rem;
         font-weight: 700;
         text-align: center;
+    }
+    .tamMediano{
+        font-size: 1.5rem;
+        font-weight: 700;
+    }
+    .tamChico{
+        font-size: 0.5rem;
+        font-weight: 700;
     }
     div h2{
         display:flex ;
@@ -507,6 +535,9 @@ div h3{
         margin: 0rem ;
         padding-left: 0rem;
         }
+    .main__flexCardEsclavoSal, .main__flexCardEsclavoDul{
+        padding: 0rem;
+    }
     .footer__master{
         display: flex;
         flex-direction: column;
@@ -517,10 +548,12 @@ div h3{
         }
     .footer__contacto{
         text-align: center;
-        padding-left: 1rem;
+        padding: 0.2rem;
+        height: auto;
         }
     footer div ul {
-        padding-left: 0rem;
+        padding: 0rem;
+        margin: 0rem;
     }
     .footer__logo{
         padding: 10px;
@@ -536,7 +569,7 @@ div h3{
     .salados__boxEsclavo{
         display: flex;
         margin: 1rem;
-        width: 18rem;
+        width: 17rem;
         height: 21rem;
         border: 1px solid #281612;
         padding: 1rem;
@@ -568,8 +601,8 @@ div h3{
     .clubkop__formCenter{
         display: flex;
         flex-direction: column;
-        width: 20rem;
-        height: 10rem;
+        width: auto;
+        height: auto;
         justify-content: center;
         align-items: center;
     }
@@ -589,6 +622,7 @@ div h3{
         display: flex;
         flex-direction: column;
         align-items: center;
+        height: auto;
     }
     .posH2{
         padding: 1rem;
@@ -597,5 +631,23 @@ div h3{
         padding: 8px 14px;
         margin-top: 0px;
         width: 250px;
+    }
+    .bebidas__padNone{
+        padding: 1rem;
+        margin: 0rem;
+    }
+    .clubkop_Subtitulo{
+        font-weight: 500;
+        font-size: 1.3rem;
+        font-style: normal;
+        text-align: center;
+        color:#EBDCC9 ;
+    }
+    .SD_Subtitulo{
+        font-weight: 500;
+        font-size: 1.3rem;
+        font-style: normal;
+        text-align: center;
+        color: #281612c2;
     }
 }
