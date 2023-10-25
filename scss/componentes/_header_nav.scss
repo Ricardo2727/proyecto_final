@@ -1,0 +1,52 @@
+
+
+// USO DE EXTEND + MIXIN//
+// SE UTILIZA EL TEMPLATE DE MIXIN POSITION
+%dispo_header {
+    @include position(flex, row, wrap, 40px, flex-end, none)
+}
+%dispo_header_nav{
+    @include position (flex, none, wrap, 0, space-between, flex-end)
+}
+// Llamado para clase de extend y mixin
+.header__menuLink{
+    @extend %dispo_header;
+    @include deco (1rem, 0, 0);
+    //margin: 1rem;
+}
+.header__menuNav{
+    @extend %dispo_header_nav;
+    @media (max-width: 992px){
+        @include position  (flex, column, wrap, 0, center, center)
+    }
+    @media (max-width: 370px){
+        @include position  (flex, column, wrap, 0, center, center)
+    }
+}
+.header__logo{
+    @include deco(10px,10px,$cCafe 1px solid);
+}
+header {
+    background-color: map-get($header, bk);
+    font-family:'Poppins', sans-serif;
+    font-weight: map-get($header,fweight);
+    font-size: map-get($header, fsize);
+    padding: map-get($header, pad);
+}
+header {
+    nav{
+        ul{
+            li{
+                margin: 1rem;
+            }
+        }
+    }
+}
+.header__padNone{
+    @media (max-width: 992px){
+        padding-left: 0;
+    }
+    @media (max-width: 370px){
+        padding-left: 0; 
+    }
+}

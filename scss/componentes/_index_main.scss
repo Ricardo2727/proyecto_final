@@ -1,0 +1,175 @@
+#main_index_verde, #main_index_verde2 {
+    background-color: $cVerde;
+}
+#main_index_menu{
+    background-color: $cNaranja;
+}
+
+
+.main__flexCardEsclavo{
+    @extend %dispo_card;
+    @include deco (3rem,0,0);
+    @media (max-width: 992px){
+        @include position (flex,column,none,1rem,center,center);
+        margin: 0rem;
+        padding-left: 0rem;
+    }
+    @media (max-width: 370px){
+        @include position (flex,column,none,1rem,center,center);
+        margin: 0rem;
+        padding-left: 0rem;
+    }
+}
+.main__flexCardEsclavoNM{
+    @extend %dispo_cardNM;
+    @include deco (4rem,0,0);
+    @media (max-width: 992px){
+        @include position (flex,column,none,1rem,center,center);
+        margin: 0rem;
+        padding-left: 0rem;
+    }
+    @media (max-width: 370px){
+        @include position (flex,column,none,1rem,center,center);
+        margin: 0rem;
+        padding-left: 0rem;
+    }
+}
+.imgRecomDia{
+    @include tam1 (block, 0 auto, $bdr-rad, 40%, none);
+    max-width:100%;
+    @media (max-width: 992px){
+        @include tam1 (block, 0 auto, $bdr-rad, auto, auto);
+    }
+    @media (max-width: 370px){
+        @include tam1 (block, 0 auto, $bdr-rad, auto, auto);
+    }
+}
+.imgMenu{
+    @extend %tam_img;
+    @media (max-width: 992px){
+        @include tam1 (block, 0 auto, $bdr-rad, auto, auto);
+    }
+    @media (max-width: 370px){
+        @include tam1 (block, 0 auto, $bdr-rad, auto, 100%);
+    }
+}
+.tamImgAuto{
+    @include tam_wd_hg (auto, auto);
+    max-width:100%;
+}
+.imgContainer, .clubkop__txtCenter, .txtBoton{
+    text-align: center;
+}
+.clubkop__txtCenter{
+    @media (max-width: 992px), (max-width: 370px){
+        text-align: center;
+    }
+}
+.boxEsclavo{
+    @include boxEsc (1rem, 1px solid $cCafe, 1rem, 30rem, $bdr-rad, center, $cCafe);
+    @media (max-width: 992px){
+        @include boxEsc (1rem, 1px solid $cCafe, 1rem, 17rem, $bdr-rad, justify, $cCafe);
+        box-sizing: unset;
+        height: auto;
+    }
+    @media (max-width: 370px){
+        @include boxEsc (1rem, 1px solid $cCafe, 1rem, 14rem, $bdr-rad, justify, $cCafe);
+        box-sizing: unset;
+        height: auto;
+    }
+}
+.boxEsclavoDos{
+    @include boxEsc (1rem, 1px solid $cCafe, 1rem, 20rem, $bdr-rad, justify, $cCafe);
+    box-sizing:unset;
+    @media (max-width: 992px){
+        @include boxEsc (1rem, 1px solid $cCafe, 1rem, 17rem, $bdr-rad, justify, $cCafe);
+        box-sizing: unset;
+        height: auto;
+    }
+    @media (max-width: 370px){
+        @include boxEsc (1rem, 1px solid $cCafe, 1rem, 14rem, $bdr-rad, justify, $cCafe);
+        box-sizing: unset;
+        height: auto;
+    }
+}
+.boxMaster{
+    padding: 30px;
+    @media (max-width: 370px){
+        padding: 20px;
+    }
+}
+.tamClubVerde{
+    background-color: $cVerde;
+    padding: 50px;
+}
+.posH2{
+    padding: 24px;
+    font-size: 24px;
+    font-weight: $f-wg-L;
+    @media (max-width: 992px),(max-width: 370px) {
+        padding:1rem;
+    }
+}
+.clubkop__listCenter{
+    @include position(flex, column, none, 0.5rem, center, center);
+    @include tam_wd_hg (60rem, auto);
+    padding:0rem;
+    @media (max-width: 992px),(max-width: 370px) {
+        @include tam_wd_hg (20rem, 20rem);
+    }
+}
+.clubkop__flex{
+    @include position(flex, column, none, 2rem, center, center);
+    @include tam_wd_hg (none, auto);
+}
+.clubkop__formCenter{
+    @include position(flex, column, none, none, center, center);
+    @include tam_wd_hg (none, auto);
+    @media (max-width: 992px),(max-width: 370px) {
+        @include tam_wd_hg (auto, auto);
+    }
+}
+.boton{
+    @include deco2 ($cNaranja, 5px, none, 8px 14px,none, 250px,none);
+    margin-top: 0px;
+    @media (max-width: 370px){
+        width: 180px;
+    }
+}
+.clubkop__padNone{
+    padding-left: 0rem;
+}
+.txtBotonDeco {
+    text-decoration: none;
+}
+.intxt{
+    @include deco2 ($cCrema, 2px, none, none, inset, 300px,none);
+    color: rgb(128, 128, 128);
+    @media (max-width: 370px) {
+        width: 200px;
+    }
+}
+div h3{
+    font-weight: $f-wg-L;
+    font-size: $f-sz-SM;
+}
+.SD_Subtitulo{
+    font-weight: $f-wg-M;
+    font-size: 1.3rem;
+    font-style: normal;
+    text-align: center;
+    color: $cCafe;
+    @media (max-width: 922px),(max-width: 370px){
+        font-size: $f-sz-S;
+    }
+}
+.clubkop_Subtitulo{
+    font-weight: $f-wg-M;
+    font-size: 1.3rem;
+    font-style: normal;
+    text-align: center;
+    color:$cCrema ;
+    @media (max-width: 922px),(max-width: 370px){
+        font-size: $f-sz-S;
+    }
+}

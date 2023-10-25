@@ -1,0 +1,34 @@
+
+#main_bebidas_verde {
+    background-color: $cVerde;
+}
+.imgBebida{
+    @include tam2 (block, 0rem auto, $bdr-rad);
+    width: 100%;
+}
+.bebidas__BoxMaster{
+    @include position (flex, none, wrap, 2rem, center,none);
+    color: $cCafe;
+    @media (max-width: 370px){
+        padding: 1rem;
+        gap: 1rem;
+    }
+}
+.bebidas__BoxEsclavo{
+    @include boxEsc (1rem, 1px solid $cCafe, 1rem, 20rem, $bdr-rad, justify, $cCafe);
+    display:flex;
+    flex-direction: column;
+    height: auto;
+    @media (max-width: 370px){
+        @include boxEsc (0rem, 1px solid $cCafe, 1rem, 14rem, $bdr-rad, justify, $cCafe)
+    }
+}
+.bebidas__padMar{
+    @include deco (0rem, 1rem, none)
+}
+.bebidas__padNone{
+    @media (max-width: 992px),(max-width: 370px){
+        @include deco (0rem, 1rem, none)
+    }
+}
+

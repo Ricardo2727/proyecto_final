@@ -1,0 +1,67 @@
+@mixin position ($d, $fd, $fw, $g, $jt, $al) {
+    display: $d;
+    flex-direction: $fd;
+    flex-wrap: $fw;
+    gap: $g;
+    justify-content: $jt;
+    align-items: $al;
+}
+@mixin deco ($mr, $pd, $br) {
+    margin: $mr;
+    padding: $pd;
+    border: $br;
+}
+@mixin deco2 ($bgc2, $b-r2,$mr2, $pd2, $br2, $wd2, $hg2) {
+    background-color: $bgc2;
+    border-radius: $b-r2;
+    margin: $mr2;
+    padding: $pd2;
+    border: $br2;
+    width: $wd2;
+    height: $hg2;
+}
+@mixin tam1 ($ds, $mg, $br-rad, $h, $w){
+    display: $ds;
+    margin: $mg;
+    border-radius: $br-rad;
+    height: $h;
+    width: $w;
+}
+@mixin tam2 ($ds2, $mg2, $br-rad2){
+    display: $ds2;
+    margin: $mg2;
+    border-radius: $br-rad2;
+}
+@mixin tam_wd_hg ($wd,$hg){
+    width: $wd;
+    height: $hg;
+}
+@mixin boxEsc ($mg3, $br3, $pd3, $wd3, $b-rad3,$txt-a3, $c3){
+    margin: $mg3;
+    border: $br3;
+    padding: $pd3;
+    width: $wd3;
+    border-radius: $b-rad3;
+    text-align: $txt-a3;
+    color: $c3;
+}
+@mixin boxEscSD ($mg4, $br4, $pd4, $wd4, $hg4, $b-rad4,$txt-a4, $d4, $fw4,$gp4,$bx-sz4){
+    margin: $mg4;
+    border: $br4;
+    padding: $pd4;
+    width: $wd4;
+    height: $hg4;
+    border-radius: $b-rad4;
+    text-align: $txt-a4;
+    display: $d4;
+    flex-wrap: $fw4;
+    gap: $gp4;
+    box-sizing: $bx-sz4;
+}
+@mixin parraFlex ($ds5, $f-d5, $wd5, $g5, $c5){
+    display: $ds5;
+    flex-direction: $f-d5;
+    width: $wd5;
+    gap: $g5;
+    color: $c5;
+}

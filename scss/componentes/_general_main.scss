@@ -1,0 +1,123 @@
+.tamGrande {
+    font-size: $f-sz-L;
+    font-weight: $f-wg-L;
+    @media (max-width:992px){
+        font-size: $f-sz-ML;
+    }
+    @media (max-width:370px){
+        font-size: $f-sz-M;
+    }
+}
+.tamMediano{
+    font-size: $f-sz-M;
+    font-weight: $f-wg-L;
+    @media (max-width:992px){
+        font-size: $f-sz-SM;
+    }
+    @media (max-width:370px){
+        font-size: $f-sz-S;
+    }
+}
+.tamChico{
+    font-size: $f-sz-S;
+    font-weight: $f-wg-L;
+    @media (max-width:992px){
+        font-size: $f-sz-XS;
+    }
+    @media (max-width:370px){
+        font-size: $f-sz-XXS;
+    }
+}
+
+main {
+    background-color: $cCrema;
+    font-family: 'Poppins', sans-serif;
+}
+div{
+    h1{
+        @include position (flex,none,none,0, center, none);
+        @include deco (0rem,2rem,0rem);
+        font-weight: $f-wg-L;
+        text-align: center
+    }
+}
+div{
+    h2{
+        @include position (flex,none,none,0, center, none);
+        @include deco (0rem,1.5rem,0rem);
+        font-weight: $f-wg-L;
+        text-align: center;
+        @media (max-width: 992px){
+            padding: 1rem;
+        }
+        @media (max-width: 370px){
+            padding: 1rem;
+        }
+    }
+}
+.tituloPag{
+    padding: 2.5rem;
+    @media (max-width: 992px){
+        padding: 1.5rem;
+    }
+    @media (max-width: 370px){
+        padding: 0.5rem;
+    }
+}
+
+main{
+    div{
+        ul{
+            li{
+                font-size: $f-sz-S;
+            }
+        }
+    }
+}
+main{
+    section{
+        ul{
+            li{
+                div{
+                    font-size: $f-sz-S;
+                }
+            }
+        }
+    }
+}
+main{
+    div{
+        p{
+            font-size: normal;
+        }
+    }
+}
+
+main{
+    section{
+        div{
+            p{
+                font-style: normal;
+            }
+        }
+    }
+}
+%dispo_card {
+    @include position (flex,row,wrap,1rem,center,none)
+}
+%dispo_cardNM {
+    @include position (flex,none,wrap,1rem,center,none)
+}
+%tam_img {
+    @include tam2 (block, 0 auto, $bdr-rad)
+}
+%tam_img_SD {
+    @include tam1 (block, 0 auto, $bdr-rad, 100%, 100%)
+}
+%boxEscSD {
+    @include boxEscSD (1rem, 1px solid $cCafe, 1rem, 35rem, 10rem, $bdr-rad, justify, flex, wrap, 1.5rem, unset)
+}
+%parraFlex {
+    @include parraFlex (flex, column, 16rem, 0.5rem, $cCafe)
+}
+

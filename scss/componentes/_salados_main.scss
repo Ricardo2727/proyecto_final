@@ -1,0 +1,34 @@
+#main_salados_verde {
+    background-color: $cVerde;
+}
+
+.main__flexCardEsclavoSal{
+    @extend %dispo_card;
+    @include deco (0,0,0);
+    margin-bottom: 0rem;
+    @media (max-width: 992px),(max-width: 370px) {
+        padding: 0rem;
+    }
+}
+.imgSalado{
+    @extend %tam_img_SD
+}
+.salados__boxEsclavo{
+    @extend %boxEscSD;
+    @media (max-width: 992px){
+        @include boxEscSD (1rem, 1px solid $cCafe, 1rem, 17rem, 21rem, $bdr-rad, justify, flex, wrap, 1.5rem, unset);
+        justify-content: center;
+    }
+    @media (max-width: 370px){
+        @include boxEscSD (1rem, 1px solid $cCafe, 1rem, 14rem, 21rem, $bdr-rad, justify, flex, wrap, 1.5rem, unset);
+        justify-content: center;
+    }
+}
+.salados__ParraFlex{
+    @extend %parraFlex;
+}
+.salados__imgMob{
+    @media (max-width: 992px){
+        @include tam_wd_hg (50%,50%)
+    }
+}

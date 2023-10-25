@@ -1,0 +1,36 @@
+$cCafe: #281612;
+$cVerde: #4D7445;
+$cNaranja: #B03B2A;
+$cCrema:#EBDCC9;
+
+
+
+
+
+/* -------------------Colores  */
+.colorCafe {
+    color: $cCafe;
+}
+.colorVerde {
+    color: $cVerde;
+}
+.colorNaranja{
+    color:$cNaranja;
+}
+.colorCrema{
+    color: $cCrema;
+}
+
+/* -----------------Colores de fondo */
+.colorFondoCafe{
+    background-color:$cCafe;
+}
+.colorFondoVerde{
+    background-color:$cVerde;
+}
+.colorFondoNaranja{
+    background-color:$cNaranja;
+}
+.colorFondoCrema{
+    background-color: $cCrema;
+}

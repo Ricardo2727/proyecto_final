@@ -1,0 +1,77 @@
+footer {
+    background-color: $cCrema;
+    font-family: 'Poppins', sans-serif;
+    padding: 1rem;
+}
+footer{
+    ul{
+        li{
+            a{
+                img{
+                    @include tam_wd_hg (3.2rem,3.2rem);
+                    border-radius: 5px;
+                }
+            }
+        }
+    }
+}
+.footer__padNone{
+    @include deco (0rem,0rem 2rem 2rem 2rem,0rem )
+}
+.footer__stylerrss{
+    @include deco (0rem,2rem,0rem);
+    @include tam_wd_hg (auto,8rem);
+    display: flex;
+    justify-content: left;
+    @media (max-width: 992px),(max-width:370px){
+        @include tam_wd_hg (25rem,8rem);
+        justify-content: center;
+    }
+} 
+.footer__flexImg{
+    @include position (flex, row, none, 3rem, none, center);
+    padding-left: 0rem;
+    margin-bottom: 0rem;
+}
+.footer__contacto{
+    display: flex;
+    flex-direction: column;
+    @include deco (0rem, 0.3rem, 0rem);
+    @include tam_wd_hg (auto, auto);
+    color: $cCafe;
+    @media (max-width: 992px),(max-width:370px) {
+        text-align: center;
+        padding: 0.2rem;
+        height: auto;
+    }
+}
+.footer__conRrss{
+    display: flex;
+    flex-direction: column;
+}
+.footer__p{
+    margin-bottom: 0rem;
+}
+.footer__master{
+    @include position (flex, row, none, 0rem, space-between, none);
+    border-top: $cCafe 2px solid;
+    @media (max-width: 992px),(max-width: 370px){
+        @include position (flex, column, none, 0rem, none, center);
+        border-top: $cCafe 2px solid;
+    }
+}
+.footer__logo {
+    @include deco (2.4rem 0.625rem 0.625rem 0.625rem, 10px, 0px);
+    @media (max-width: 992px),(max-width: 370px){
+        @include deco (0.625rem,10px, none)
+    }
+}
+footer{
+    div{
+        ul{
+            @media (max-width: 992px), (max-width: 370px){
+                @include deco(0rem, 0rem, none)
+            }
+        }
+    }
+}

@@ -1,0 +1,33 @@
+#main_dulces_verde {
+    background-color: $cVerde;
+}
+
+.main__flexCardEsclavoDul{
+    @extend %dispo_card;
+    @include deco (0,0,0);
+    margin-bottom: 0rem;
+    @media (max-width: 992px){
+        padding: 0rem;
+    }
+    @media (max-width: 370px){
+        padding: 0rem;
+    }
+}
+
+.imgDulces{
+    @extend %tam_img_SD
+}
+.dulces__boxEsclavo{
+    @extend %boxEscSD;
+    @media (max-width: 992px){
+        @include boxEscSD (1rem, 1px solid $cCafe, 1rem, 17rem, 21rem, $bdr-rad, justify, flex, wrap, 1.5rem, unset);
+        justify-content: center;
+    }
+    @media (max-width: 370px){
+        @include boxEscSD (1rem, 1px solid $cCafe, 1rem, 14rem, 21rem, $bdr-rad, justify, flex, wrap, 1.5rem, unset);
+        justify-content: center;
+    }
+}
+.dulces__ParraFlex{
+    @extend %parraFlex;
+}
