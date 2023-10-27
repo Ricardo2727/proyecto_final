@@ -35,7 +35,7 @@
     }
 }
 .imgRecomDia{
-    @include tam1 (block, 0 auto, $bdr-rad, 40%, none);
+    @include tam1 (block, 0 auto, 2rem, 40%, none);
     max-width:100%;
     @media (max-width: 992px){
         @include tam1 (block, 0 auto, $bdr-rad, auto, auto);
@@ -60,34 +60,37 @@
 .imgContainer, .clubkop__txtCenter, .txtBoton{
     text-align: center;
 }
+
 .clubkop__txtCenter{
     @media (max-width: 992px), (max-width: 370px){
         text-align: center;
     }
 }
 .boxEsclavo{
-    @include boxEsc (1rem, 1px solid $cCafe, 1rem, 30rem, $bdr-rad, center, $cCafe);
+    @include boxEsc (1rem, 1px solid $cCafe, 1.5rem, 30rem, $bdr-rad, center, $cCafe);
+    @include aniBrd;
     @media (max-width: 992px){
         @include boxEsc (1rem, 1px solid $cCafe, 1rem, 17rem, $bdr-rad, justify, $cCafe);
-        box-sizing: unset;
-        height: auto;
+        @include aniBrd;
     }
     @media (max-width: 370px){
         @include boxEsc (1rem, 1px solid $cCafe, 1rem, 14rem, $bdr-rad, justify, $cCafe);
-        box-sizing: unset;
-        height: auto;
+        @include aniBrd;
     }
 }
 .boxEsclavoDos{
-    @include boxEsc (1rem, 1px solid $cCafe, 1rem, 20rem, $bdr-rad, justify, $cCafe);
+    @include boxEsc (1rem, 1px solid $cCafe, 1.5rem, 20rem, $bdr-rad, justify, $cCafe);
+    @include aniBrd;
     box-sizing:unset;
     @media (max-width: 992px){
         @include boxEsc (1rem, 1px solid $cCafe, 1rem, 17rem, $bdr-rad, justify, $cCafe);
+        @include aniBrd;
         box-sizing: unset;
         height: auto;
     }
     @media (max-width: 370px){
         @include boxEsc (1rem, 1px solid $cCafe, 1rem, 14rem, $bdr-rad, justify, $cCafe);
+        @include aniBrd;
         box-sizing: unset;
         height: auto;
     }

@@ -10,15 +10,18 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;500;700&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="./css/style.css">
-        <title>KOP</title>
+    <title>KOP Coffee co. - Un mimo al alma - Inicio </title>
 </head>
 
 <body>
     <header>
-        <div class="header__menuNav">
+        <div id="arriba" class="header__menuNav">
             <div>
-                <img class="header__logo" src="./img/kop/kop logo crema.jpg"
+                <img class="header__logo" data-aos="zoom-in-up" data-aos-duration="1000" data-aos-delay="100"
+                    src="./img/kop/kop logo crema.jpg"
                     alt="logo de la cafeteria, ilustracion de una taza de cafe y en la parte inferior letras del nombre de la cafeteria KOP">
             </div>
             <nav class="navbar navbar-expand-lg">
@@ -50,21 +53,23 @@
             <img class="tamImgAuto" src="./img/kop/kop naranja letras.jpg" alt="imagen del logotipo en naranja">
         </div>
         <div class="tituloPag" id="main_index_verde">
-            <h1 class="colorCrema tamGrande">RECOMENDADOS DEL DÍA </h1>
+            <h1 class="colorCrema tamGrande focus-in-contract-bck">RECOMENDADOS DEL DÍA </h1>
         </div>
         <div>
             <ul class="main__flexCardEsclavo">
                 <li>
-                    <div class="boxEsclavo">
-                        <img class="imgRecomDia" src="./img/menu/limo.jpg" alt="">
+                    <div class="boxEsclavo" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="100">
+                        <img class="imgRecomDia shadow-drop-2-bottom" src="./img/menu/limo.jpg"
+                            alt="Vaso de limonada casera con rodajas de limón y hielo, decorado con hojas de menta fresca en un día soleado de verano.">
                         <h2>Limonada Casera</h2>
                         <p>Disfruta de nuestra limonada casera, preparada con jugo fresco de limones recién exprimidos y
                             un toque de dulzura perfectamente equilibrado.</p>
                     </div>
                 </li>
                 <li>
-                    <div class="boxEsclavo">
-                        <img class="imgRecomDia" src="./img/bebidas/cafe_capu.png" alt="">
+                    <div class="boxEsclavo" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="100">
+                        <img class="imgRecomDia shadow-drop-2-bottom" src="./img/bebidas/cafe_capu.png"
+                            alt="Taza de café capuchino perfectamente elaborado, con una capa espumosa de leche y un patrón de arte latte en la parte superior, servido en una mesa de madera con un elegante plato de acompañamiento.">
                         <h2>Café Capuccino</h2>
                         <p>Deléitate con nuestra exquisita creación. Una mezcla perfecta de café espresso suave y espuma
                             de leche cremosa, coronado con un toque de cacao en polvo. </p>
@@ -76,51 +81,57 @@
 
 
         <div class="boxMaster" id="main_index_menu">
-            <h2 class="colorCrema tamGrande">NUESTRO MENÚ</h2>
+            <h2 class="colorCrema tamGrande focus-in-contract-bck">NUESTRO MENÚ</h2>
         </div>
         <div>
             <ul class="main__flexCardEsclavoNM">
-                <li class="boxEsclavoDos">
-                    <a href="./paginas/bebidas.html"><img class="imgMenu" src="./img/menu/bebida_cafe.jpg" alt=""></a>
+                <li class="boxEsclavoDos shadow-drop-2-bottom" data-aos="flip-up" data-aos-duration="1000"
+                    data-aos-delay="200">
+                    <a href="./paginas/bebidas.html"><img class="imgMenu" src="./img/menu/bebida_cafe.jpg"
+                            alt="Una composición de varias tazas de café servidos, cada una con su propia presentación única. Una taza está adornada con crema batida y espolvoreada con canela, otra tiene un patrón de arte latte elaborado en la superficie, y otra muestra un clasico café espresso recien servido. Las tazas están dispuestas de manera elegante en una mesa de madera."></a>
                     <h2>Bebidas</h2>
                     <p>Descubre nuestra selección de bebidas y déjate llevar por una experiencia de sabor inigualable.
                         Desde el clásico café espresso hasta suaves tés de hierbas, pasando por refrescantes batidos de
                         frutas, limonadas caseras y cócteles de café helado."</p>
-                    <!-- <p>Descubre nuestra selección de bebidas y déjate llevar por una experiencia de sabor inigualable. Desde el clásico café espresso hasta suaves tés de hierbas, pasando por refrescantes batidos de frutas, limonadas caseras y cócteles de café helado. Nuestras bebidas son cuidadosamente preparadas con ingredientes de alta calidad y un toque de creatividad."</p> -->
                 </li>
-                <li class="boxEsclavoDos">
-                    <a href="./paginas/dulces.html"><img class="imgMenu" src="./img/menu/cheesecake.png" alt=""></a>
+                <li class="boxEsclavoDos shadow-drop-2-bottom" data-aos="flip-up" data-aos-duration="1000"
+                    data-aos-delay="200">
+                    <a href="./paginas/dulces.html"><img class="imgMenu" src="./img/menu/cheesecake.png"
+                            alt="Un delicioso Cheesecake de Frutos Rojos servido en un elegante plato de greda. El cheesecake está decorado con una capa de frutos rojos frescos que incluyen fresas, frambuesas y arandanos, creando un contraste vibrante con el suave y cremoso relleno de queso. La base de galleta crujiente es visible en la parte inferior, proporcionando una textura complementaria al postre."></a>
                     <h2>Dulces</h2>
                     <p>Sumérgete en un mundo de placer y dulzura con nuestra exquisita pastelería dulce. Desde
                         croissants de chocolate recién horneados hasta tartas de frutas frescas y donas glaseadas,
                         nuestra pastelería dulce es un paraíso para los amantes de los postres. </p>
-                    <!-- <p>Sumérgete en un mundo de placer y dulzura con nuestra exquisita pastelería dulce. Desde croissants de chocolate recién horneados hasta tartas de frutas frescas y donas glaseadas, nuestra pastelería dulce es un paraíso para los amantes de los postres. Cada creación está cuidadosamente preparada para ofrecerte una experiencia única de sabor y calidad.</p> -->
                 </li>
-                <li class="boxEsclavoDos">
-                    <a href="./paginas/salados.html"><img class="imgMenu" src="./img/menu/fosforito.jpg" alt=""></a>
+                <li class="boxEsclavoDos shadow-drop-2-bottom" data-aos="flip-up" data-aos-duration="1000"
+                    data-aos-delay="200">
+                    <a href="./paginas/salados.html"><img class="imgMenu" src="./img/menu/fosforito.jpg"
+                            alt="Un delicioso Fosforito relleno de queso brie, pastron y pepinitos encurtidos, envuelto en una masa hojaldrada agridulce y horneado hasta alcanzar un dorado perfecto. Al morderlo, se experimenta una explosión de sabores, donde el queso derretido se combina con el sabor salado del pastron y la frescura de los pepinitos. Este plato es un equilibrio exquisito entre lo dulce y lo salado, ofreciendo una experiencia gastronómica irresistible para los amantes de los contrastes de sabores."></a>
                     <h2>Salados</h2>
                     <p>Nuestra pastelería salada es una explosión de sabores y texturas que deleitará tu paladar. Desde
                         los mas ricos sandwich, hasta las clasicas medias lunas con jamón y queso, nuestra
                         selección de pastelería salada ofrece opciones deliciosas para satisfacer tu apetito.</p>
-                    <!-- <p>Nuestra pastelería salada es una explosión de sabores y texturas que deleitará tu paladar. Desde hojaldres rellenos de queso y espinacas hasta croissants salados con jamón y queso, nuestra selección de pastelería salada ofrece opciones deliciosas para satisfacer tu apetito. Cada bocado es una experiencia única que combina ingredientes frescos y sabores irresistibles.</p> -->
                 </li>
             </ul>
         </div>
 
         <section class="tamClubVerde clubkop__flex">
-            <div  class="clubkop__formCenter">
-                <h2 class="colorCrema tamGrande">CLUB KOP</h2>
+            <div class="clubkop__formCenter">
+                <h2 class="colorCrema tamGrande focus-in-contract-bck">CLUB KOP</h2>
                 <h2 class="colorCrema posH2">¡UNITE A NOSOTROS!</h2>
-                <h2 class="clubkop_Subtitulo">Entra en el mundo de la pasión por el café y únete a nuestro Club de Socios hoy mismo. ¡Esperamos recibirte en nuestra familia de amantes del café y hacer que cada visita a nuestra cafetería sea aún más especial!".</h2>
+                <h2 class="clubkop_Subtitulo" data-aos="fade-up" data-aos-offset="200" data-aos-easing="ease-in-sine">
+                    Entra en el mundo de la pasión por el café y únete a nuestro Club de Socios hoy mismo. ¡Esperamos
+                    recibirte en nuestra familia de amantes del café y hacer que cada visita a nuestra cafetería sea aún
+                    más especial!".</h2>
                 <ul class="clubkop__padNone">
                     <li>
-                        <div class="boton txtBoton">
-                            <a class="colorCrema" href="./paginas/clubkop.html">UNIRME A CLUB KOP</a>
+                        <div class="boton txtBoton vibrate-1">
+                            <a class="colorCrema" href="./paginas/clubkop.html#clubkopform">UNIRME A CLUB KOP</a>
                         </div>
                     </li>
                 </ul>
             </div>
-            
+
             <ul class="clubkop__listCenter">
                 <h2 class="colorCrema posH2">INGRESA A CLUB KOP</h2>
                 <li>
@@ -133,21 +144,32 @@
                 </li>
                 <li>
                     <!-- Boton pensado en el futuro, para ir a promociones exclusivas. Debera consultar usuario y contraseña -->
-                    <div class="boton txtBoton">
+                    <div class="boton txtBoton shadow-drop-2-bottom">
                         <a class="colorCrema " href="./paginas/clubkop.html">INGRESAR</a>
                     </div>
                 </li>
             </ul>
         </section>
+        <div>
+            <a href="#arriba"><img width="50" height="50"
+                    src="https://img.icons8.com/ios-filled/50/000000/double-up.png" alt="double-up"
+                    style="position: fixed;bottom: 10px;right: 2%;" /></a>
+        </div>
     </main>
 
-    <footer  class="footer__master colorFondoCrema">
-        <div class="footer__conRrss">
+    <footer class="footer__master colorFondoCrema">
+        <div class="footer__conRrss" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="100">
             <div class="footer__stylerrss">
                 <ul class="footer__flexImg">
-                    <li><a href="./index.html"><img src="./img/icons8-facebook.svg" alt=""></a></li>
-                    <li><a href="./index.html"><img src="./img/icons8-whatsapp.svg" alt=""></a></li>
-                    <li><a href="./index.html"><img src="./img/icons8-instagram.svg" alt=""></a></li>
+                    <li><a href="./index.html"><img src="./img/icons8-facebook.svg"
+                                alt="Logo de Facebook: una 'f' en minúscula en color blanco sobre un fondo azul. Esta vez modificado a color de fondo Crema y la 'f' de color cafe. Este logo representa la plataforma de redes sociales Facebook, utilizada para conectarse con amigos, familiares y comunidades en línea."></a>
+                    </li>
+                    <li><a href="./index.html"><img src="./img/icons8-whatsapp.svg"
+                                alt="Logo de WhatsApp: un bocadillo de diálogo verde con un auricular blanco en el centro. Esta vez modificado a color de fondo Crema y el auricular de color cafe. Este logo representa la aplicación de mensajería WhatsApp, utilizada para enviar mensajes de texto, voz y multimedia a través de dispositivos móviles."></a>
+                    </li>
+                    <li><a href="./index.html"><img src="./img/icons8-instagram.svg"
+                                alt="Logo de Instagram: una cámara estilizada en tonos degradados de color morado, rosa y naranja. Esta vez con dos tonos fondo colro crema y lineas de color cafe. Este logo representa la plataforma de redes sociales Instagram, utilizada para compartir fotos y videos, y para conectarse con amigos, familiares y seguidores a través de contenido visual."></a>
+                    </li>
                 </ul>
             </div>
             <div class="colorCafe footer__contacto">
@@ -165,10 +187,11 @@
             </div>
         </div>
         <div>
-            <img class="footer__logo" src="./img/kop/kop logo crema.jpg"
+            <img class="footer__logo" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100"
+                src="./img/kop/kop logo crema.jpg"
                 alt="logo de la cafeteria, ilustracion de una taza de cafe y en la parte inferior letras del nombre de la cafeteria KOP">
         </div>
-        <div>
+        <div data-aos="fade-left" data-aos-duration="1000" data-aos-delay="100">
             <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3285.4128659977505!2d-58.460196199999984!3d-34.56841839999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb56969e09651%3A0xac72ff00620859d4!2sBajamar!5e0!3m2!1ses-419!2sar!4v1693837666514!5m2!1ses-419!2sar"
                 width="300" height="250" style="border:0;padding: 2rem;" allowfullscreen="" loading="lazy"
@@ -176,8 +199,12 @@
         </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-        crossorigin="anonymous">
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
+        </script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
     </script>
 </body>
+
 </html>

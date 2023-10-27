@@ -19,12 +19,16 @@
 }
 .dulces__boxEsclavo{
     @extend %boxEscSD;
+    @include aniBrd;
     @media (max-width: 992px){
         @include boxEscSD (1rem, 1px solid $cCafe, 1rem, 17rem, 21rem, $bdr-rad, justify, flex, wrap, 1.5rem, unset);
+        @include aniBrd;
+        height: 80%;
         justify-content: center;
     }
     @media (max-width: 370px){
         @include boxEscSD (1rem, 1px solid $cCafe, 1rem, 14rem, 21rem, $bdr-rad, justify, flex, wrap, 1.5rem, unset);
+        @include aniBrd;
         justify-content: center;
     }
 }
