@@ -28,6 +28,14 @@ a {
   color: #EBDCC9;
 }
 
+.colorNegro {
+  color: #000000;
+}
+
+.colorCrema_op {
+  color: #FCF6EE;
+}
+
 /* -----------------Colores de fondo */
 .colorFondoCafe {
   background-color: #281612;
@@ -814,7 +822,7 @@ main section div p {
 }
 
 .boton {
-  background-color: #B03B2A;
+  background-color: #281612;
   border-radius: 5px;
   margin: none;
   padding: 8px 14px;
@@ -845,7 +853,7 @@ main section div p {
   border: inset;
   width: 300px;
   height: none;
-  color: rgb(128, 128, 128);
+  color: rgb(0, 0, 0);
 }
 @media (max-width: 370px) {
   .intxt {
@@ -876,7 +884,7 @@ div h3 {
   font-size: 1.3rem;
   font-style: normal;
   text-align: center;
-  color: #EBDCC9;
+  color: #FCF6EE;
 }
 @media (max-width: 922px), (max-width: 370px) {
   .clubkop_Subtitulo {

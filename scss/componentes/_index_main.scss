@@ -133,7 +133,7 @@
     }
 }
 .boton{
-    @include deco2 ($cNaranja, 5px, none, 8px 14px,none, 250px,none);
+    @include deco2 ($cCafe, 5px, none, 8px 14px,none, 250px,none);
     margin-top: 0px;
     @media (max-width: 370px){
         width: 180px;
@@ -147,7 +147,7 @@
 }
 .intxt{
     @include deco2 ($cCrema, 2px, none, none, inset, 300px,none);
-    color: rgb(128, 128, 128);
+    color: rgb(0, 0, 0);
     @media (max-width: 370px) {
         width: 200px;
     }
@@ -171,7 +171,7 @@ div h3{
     font-size: 1.3rem;
     font-style: normal;
     text-align: center;
-    color:$cCrema ;
+    color:$cCrema_op ;
     @media (max-width: 922px),(max-width: 370px){
         font-size: $f-sz-S;
     }

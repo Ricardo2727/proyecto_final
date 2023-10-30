@@ -1,7 +1,9 @@
 $cCafe: #281612;
 $cVerde: #4D7445;
 $cNaranja: #B03B2A;
-$cCrema:#EBDCC9;
+$cCrema:#EBDCC9; 
+$cNegro:#000000;
+$cCrema_op:#FCF6EE;
 
 
 
@@ -19,6 +21,12 @@ $cCrema:#EBDCC9;
 }
 .colorCrema{
     color: $cCrema;
+}
+.colorNegro{
+    color: $cNegro;
+}
+.colorCrema_op{
+    color: $cCrema_op;
 }
 
 /* -----------------Colores de fondo */
