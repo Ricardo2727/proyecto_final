@@ -114,11 +114,11 @@
     }
 }
 .clubkop__listCenter{
-    @include position(flex, column, none, 0.5rem, center, center);
+    @include position(flex, column, none, 0.5rem, flex-start, center);
     @include tam_wd_hg (60rem, auto);
     padding:0rem;
     @media (max-width: 992px),(max-width: 370px) {
-        @include tam_wd_hg (20rem, 20rem);
+        @include tam_wd_hg (20rem, none);
     }
 }
 .clubkop__flex{
@@ -134,7 +134,7 @@
 }
 .boton{
     @include deco2 ($cCafe, 5px, none, 8px 14px,none, 250px,none);
-    margin-top: 0px;
+    margin-top: 2rem;
     @media (max-width: 370px){
         width: 180px;
     }

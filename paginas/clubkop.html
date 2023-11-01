@@ -15,8 +15,10 @@
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="./css/style.css">
     <title>KOP Coffee co. - Cafe, un mimo al alma - Club KOP</title>
-    <meta name="description" content="Bienvenido a nuestro oasis gastronómico, donde la pasión por el café de especialidad se combina con una exquisita selección de pastelería dulce y salada, así como una cautivadora variedad de coctelería de la casa. Deleita tu paladar con una fusión de sabores, desde tentadoras tartas y pasteles artesanales hasta suculentos bocadillos salados, cuidadosamente elaborados para satisfacer todos los antojos. Nuestros mixólogos expertos te sorprenderán con innovadoras creaciones de cócteles, fusionando ingredientes frescos con destilados de calidad superior, para ofrecerte una experiencia de bebidas única y emocionante. Disfruta de un ambiente acogedor y un servicio excepcional mientras te sumerges en una experiencia gastronómica inolvidable en nuestra cafetería de especialidad." />
-    <meta name="keywords" content="Café, Coffee, dulces, salados, club de café, bebidas, café de especialidad, café de alta calidad, pastelería artesanal, coctelería de autor, cafetería acogedora, ambiente relajante, sabores exquisitos, baristas expertos, mezclas de café únicas, bebidas innovadoras, deleite culinario, café gourmet, experiencia gastronómica" />
+    <meta name="description"
+        content="Bienvenido a nuestro oasis gastronómico, donde la pasión por el café de especialidad se combina con una exquisita selección de pastelería dulce y salada, así como una cautivadora variedad de coctelería de la casa. Deleita tu paladar con una fusión de sabores, desde tentadoras tartas y pasteles artesanales hasta suculentos bocadillos salados, cuidadosamente elaborados para satisfacer todos los antojos. Nuestros mixólogos expertos te sorprenderán con innovadoras creaciones de cócteles, fusionando ingredientes frescos con destilados de calidad superior, para ofrecerte una experiencia de bebidas única y emocionante. Disfruta de un ambiente acogedor y un servicio excepcional mientras te sumerges en una experiencia gastronómica inolvidable en nuestra cafetería de especialidad." />
+    <meta name="keywords"
+        content="Café, Coffee, dulces, salados, club de café, bebidas, café de especialidad, café de alta calidad, pastelería artesanal, coctelería de autor, cafetería acogedora, ambiente relajante, sabores exquisitos, baristas expertos, mezclas de café únicas, bebidas innovadoras, deleite culinario, café gourmet, experiencia gastronómica" />
 
 </head>
 
@@ -88,14 +90,25 @@
                 <li>
                     <div class="clubkop__formCenter">
                         <h2 class="colorCrema tamMediano clubkop__txtCenter">INGRESA TUS DATOS</h2>
-                        <p class="intxt">Nombre</p>
-                        <p class="intxt">Fecha de Nacimiento</p>
-                        <p class="intxt">Correo Electrónico</p>
-                    </div>
-                </li>
-                <li>
-                    <div class="boton txtBoton shadow-drop-2-bottom">
-                        <a class="colorCrema txtBotonDeco" href="./clubkop.html">INSCRIBIRME</a>
+                        <form action="php" method="post" enctype="">
+                            <ul class="clubkop__listCenter">
+                                <li class="clubkop__listCenter">
+                                    <label for="name" name="name" class="colorCrema_op">Nombre Completo</label>
+                                    <input type="text" name="name" id="" placeholder="Nombre Apellido" class="intxt" required>
+                                </li>
+                                <li class="clubkop__listCenter">
+                                    <label for="name" name="name" class="colorCrema_op">Correo Electrónico</label>
+                                    <input type="email" name="email" id="" placeholder="correo@kop.com" class="intxt" required>
+                                </li>
+                                <li class="clubkop__listCenter">
+                                    <label for="name" name="name" class="colorCrema_op">Contraseña</label>
+                                    <input type="password" name="Contraseña" placeholder="Define tu Contraseña" class="intxt" id="" required>
+                                </li>
+                                <li class="clubkop__listCenter">
+                                    <input type="submit" class="boton txtBoton colorCrema" value="INSCRIBIRME">
+                                </li>
+                            </ul>
+                        </form>
                     </div>
                 </li>
             </ul>
@@ -103,12 +116,12 @@
         <div>
             <a href="#arriba"><img width="50" height="50"
                     src="https://img.icons8.com/ios-filled/50/000000/double-up.png" alt="double-up"
-                    style="position: fixed;bottom: 10px;right: 30px;" /></a>
+                    style="position: fixed;bottom: 50px;right: 50px;" /></a>
         </div>
     </main>
 
     <footer class="footer__master colorFondoCrema">
-        <div class="footer__conRrss" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="100">
+        <div class="footer__conRrss" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
             <div class="footer__stylerrss">
                 <ul class="footer__flexImg">
                     <li><a href="../index.html"><img src="../img/icons8-facebook.svg"
@@ -137,11 +150,11 @@
             </div>
         </div>
         <div>
-            <img class="footer__logo" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100"
+            <img class="footer__logo" data-aos="fade-down" data-aos-duration="1000" data-aos-delay="100"
                 src="../img/kop/kop logo crema.jpg"
                 alt="logo de la cafeteria, ilustracion de una taza de cafe y en la parte inferior letras del nombre de la cafeteria KOP">
         </div>
-        <div data-aos="fade-left" data-aos-duration="1000" data-aos-delay="100">
+        <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
             <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3285.4128659977505!2d-58.460196199999984!3d-34.56841839999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb56969e09651%3A0xac72ff00620859d4!2sBajamar!5e0!3m2!1ses-419!2sar!4v1693837666514!5m2!1ses-419!2sar"
                 width="300" height="250" style="border:0;padding: 2rem;" allowfullscreen="" loading="lazy"

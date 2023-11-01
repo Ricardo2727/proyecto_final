@@ -780,7 +780,7 @@ main section div p {
   flex-direction: column;
   flex-wrap: none;
   gap: 0.5rem;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   width: 60rem;
   height: auto;
@@ -789,7 +789,7 @@ main section div p {
 @media (max-width: 992px), (max-width: 370px) {
   .clubkop__listCenter {
     width: 20rem;
-    height: 20rem;
+    height: none;
   }
 }
 
@@ -829,7 +829,7 @@ main section div p {
   border: none;
   width: 250px;
   height: none;
-  margin-top: 0px;
+  margin-top: 2rem;
 }
 @media (max-width: 370px) {
   .boton {
