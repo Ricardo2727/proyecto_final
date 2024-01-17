@@ -24,7 +24,7 @@
 
 <body>
     <header>
-        <div id="arriba" class="header__menuNav">
+        <div class="header__menuNav">
             <div>
                 <img class="header__logo" data-aos="zoom-in-up" data-aos-duration="1000" data-aos-delay="100"
                     src="../img/kop/kop logo crema.jpg"
@@ -97,21 +97,26 @@
                             <ul class="clubkop__listCenter">
                                 <li class="clubkop__listCenter">
                                     <label for="name" name="name" class="colorCrema_op">Nombre Completo</label>
-                                    <input type="text" name="name" id="" placeholder="Nombre Apellido" class="intxt"
+                                    <input type="text" name="name" id="nombre" placeholder="Nombre Apellido" class="intxt"
                                         required>
                                 </li>
                                 <li class="clubkop__listCenter">
                                     <label for="name" name="name" class="colorCrema_op">Correo Electrónico</label>
-                                    <input type="email" name="email" id="" placeholder="correo@kop.com" class="intxt"
+                                    <input type="email" name="email" id="correo" placeholder="correo@kop.com" class="intxt"
+                                        required>
+                                </li>
+                                <li class="clubkop__listCenter">
+                                    <label for="name" name="name" class="colorCrema_op">Nombre Usuario</label>
+                                    <input type="text" name="usuario" id="usuario" placeholder="Nombre Usuario" class="intxt"
                                         required>
                                 </li>
                                 <li class="clubkop__listCenter">
                                     <label for="name" name="name" class="colorCrema_op">Contraseña</label>
                                     <input type="password" name="Contraseña" placeholder="Define tu Contraseña"
-                                        class="intxt" id="" required>
+                                        class="intxt" id="contrasena" required>
                                 </li>
                                 <li class="clubkop__listCenter">
-                                    <input type="submit" class="boton txtBoton colorCrema" value="INSCRIBIRME">
+                                    <button type="submit" class="boton txtBoton colorCrema" >INSCRIBIRME</button>
                                 </li>
                             </ul>
                         </form>
@@ -174,6 +179,7 @@
     <script>
         AOS.init();
     </script>
+    <script src="../js/clubkop.js"></script>
 </body>
 
 </html>
