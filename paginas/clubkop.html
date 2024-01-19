@@ -13,7 +13,7 @@
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="../css/style.css">
     <title>KOP Coffee co. - Cafe, un mimo al alma - Club KOP</title>
     <meta name="description"
         content="Bienvenido a nuestro oasis gastronómico, donde la pasión por el café de especialidad se combina con una exquisita selección de pastelería dulce y salada, así como una cautivadora variedad de coctelería de la casa. Deleita tu paladar con una fusión de sabores, desde tentadoras tartas y pasteles artesanales hasta suculentos bocadillos salados, cuidadosamente elaborados para satisfacer todos los antojos. Nuestros mixólogos expertos te sorprenderán con innovadoras creaciones de cócteles, fusionando ingredientes frescos con destilados de calidad superior, para ofrecerte una experiencia de bebidas única y emocionante. Disfruta de un ambiente acogedor y un servicio excepcional mientras te sumerges en una experiencia gastronómica inolvidable en nuestra cafetería de especialidad." />
@@ -96,30 +96,30 @@
                 <li>
                     <div class="clubkop__formCenter">
                         <h2 class="colorCrema tamMediano clubkop__txtCenter">INGRESA TUS DATOS</h2>
-                        <form action="php" method="post" enctype="">
+                        <form id="formularioInscripcion" action="php" method="post" enctype="">
                             <ul class="clubkop__listCenter">
                                 <li class="clubkop__listCenter">
-                                    <label for="name" name="name" class="colorCrema_op">Nombre Completo</label>
-                                    <input type="text" name="name" id="nombre" placeholder="Nombre Apellido" class="intxt"
+                                    <label for="nombre" class="colorCrema_op">Nombre Completo</label>
+                                    <input type="text" name="nombre" id="nombre" placeholder="Nombre Apellido" class="intxt"
                                         required>
                                 </li>
                                 <li class="clubkop__listCenter">
-                                    <label for="name" name="name" class="colorCrema_op">Correo Electrónico</label>
-                                    <input type="email" name="email" id="correo" placeholder="correo@kop.com" class="intxt"
+                                    <label for="correo" class="colorCrema_op">Correo Electrónico</label>
+                                    <input type="email" name="correo" id="correo" placeholder="correo@kop.com" class="intxt"
                                         required>
                                 </li>
                                 <li class="clubkop__listCenter">
-                                    <label for="name" name="name" class="colorCrema_op">Nombre Usuario</label>
+                                    <label for="usuario" class="colorCrema_op">Nombre Usuario</label>
                                     <input type="text" name="usuario" id="usuario" placeholder="Nombre Usuario" class="intxt"
                                         required>
                                 </li>
                                 <li class="clubkop__listCenter">
-                                    <label for="name" name="name" class="colorCrema_op">Contraseña</label>
-                                    <input type="password" name="Contraseña" placeholder="Define tu Contraseña"
+                                    <label for="contrasena" class="colorCrema_op">Contraseña</label>
+                                    <input type="password" name="contraseña" placeholder="Define tu Contraseña"
                                         class="intxt" id="contrasena" required>
                                 </li>
                                 <li class="clubkop__listCenter">
-                                    <button type="submit" class="boton txtBoton colorCrema" >INSCRIBIRME</button>
+                                    <button type="button" id="btn-inscribirse" class="boton txtBoton colorCrema" >INSCRIBIRME</button>
                                 </li>
                             </ul>
                         </form>
@@ -179,11 +179,11 @@
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
         </script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>
-        AOS.init();
-    </script>
-    <script src="../js/clubkop.js"></script>
-    <script src="../js/index.js"></script>
+    <script> AOS.init();</script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    
+    <script type="module" src="../script/clubkop.js"></script>
+    <script type="module" src="../script/index.js"></script>
 </body>
 
 </html>

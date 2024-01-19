@@ -797,7 +797,7 @@ main section div p {
   display: flex;
   flex-direction: column;
   flex-wrap: none;
-  gap: 2rem;
+  gap: 0rem;
   justify-content: center;
   align-items: center;
   width: none;
@@ -830,6 +830,10 @@ main section div p {
   width: 250px;
   height: none;
   margin-top: 2rem;
+}
+
+.botonCS{
+  margin: 0rem;
 }
 @media (max-width: 370px) {
   .boton {

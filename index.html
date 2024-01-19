@@ -119,42 +119,49 @@
             </ul>
         </div>
 
-        <section class="tamClubVerde clubkop__flex">
-            <div class="clubkop__formCenter" id="contenedorUsuario" >
-                <h2 class="colorCrema tamGrande focus-in-contract-bck">CLUB KOP</h2>
-                <h2 class="colorCrema posH2">¡UNITE A NOSOTROS!</h2>
-                <h2 class="clubkop_Subtitulo" data-aos="fade-up" data-aos-offset="200" data-aos-easing="ease-in-sine">
-                    Entra en el mundo de la pasión por el café y únete a nuestro Club de Socios hoy mismo. ¡Esperamos
-                    recibirte en nuestra familia de amantes del café y hacer que cada visita a nuestra cafetería sea aún
-                    más especial!".</h2>
-                <ul class="clubkop__padNone">
-                    <li>
-                        <div class="boton txtBoton vibrate-1 ">
-                            <a class="colorCrema" href="./paginas/clubkop.html#clubkopform">UNIRME A CLUB KOP</a>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-            <div class="colorCrema posH2" >
-                <h2  id="contenedorUsuario" class="colorCrema posH2">INGRESA A CLUB KOP</h2>
-                <!-- <form action="./paginas/clubkop.html" method="post" enctype=""> -->
-                    <ul class="clubkop__listCenter">
-                        <li class="clubkop__listCenter">
-                            <label for="name" name="name" class="colorCrema_op">Usuario</label>
-                            <input name="usuario" id="user" placeholder="Nombre Usuario" class="intxt" required>
-                        </li>
-                        <li class="clubkop__listCenter">
-                            <label for="name" name="name" class="colorCrema_op">Contraseña</label>
-                            <input type="password" name="password" class="intxt" placeholder="Ingresa tu Contraseña"
-                                id="password" required>
-                        </li>
-                        <li class="clubkop__listCenter">
-                            <!-- <button id="btn-iniciar">INGRESAR</button> -->
-                            <button class="boton txtBoton colorCrema" id="btn-iniciar">INGRESAR</button>
-                             <!-- <input type="submit" class="boton txtBoton colorCrema" value="INGRESAR" id="btn-iniciar"> -->
+        <section class="tamClubVerde clubkop__flex" >
+            <div id="contenedorUsuario" >
+                <div class="clubkop__formCenter" >
+                    <h2 class="colorCrema tamGrande focus-in-contract-bck">CLUB KOP</h2>
+                    <h2 class="colorCrema posH2">¡UNITE A NOSOTROS!</h2>
+                    <h2 class="clubkop_Subtitulo" data-aos="fade-up" data-aos-offset="200" data-aos-easing="ease-in-sine">
+                        Entra en el mundo de la pasión por el café y únete a nuestro Club de Socios hoy mismo. ¡Esperamos
+                        recibirte en nuestra familia de amantes del café y hacer que cada visita a nuestra cafetería sea aún
+                        más especial!".</h2>
+                    <ul class="clubkop__padNone">
+                        <li>
+                            <div class=" vibrate-1 ">
+                                <!-- <a class="colorCrema" href="./paginas/clubkop.html#clubkopform">UNIRME A CLUB KOP</a> -->
+                                <button id="btn-unirme" class="boton txtBoton colorCrema" href="./paginas/clubkop.html#clubkopform">UNIRME A CLUB KOP</button>
+                            </div>
                         </li>
                     </ul>
-                <!-- </form> -->
+                </div>
+                <div class="colorCrema posH2 clubkop__formCenter" >
+                    <h2  id="contenedorUsuario" class="colorCrema posH2">INGRESA A CLUB KOP</h2>
+                    <!-- <form action="./paginas/clubkop.html" method="post" enctype=""> -->
+                        <ul class="clubkop__listCenter">
+                            <li class="clubkop__listCenter">
+                                <label for="name" name="name" class="colorCrema_op">Usuario</label>
+                                <input name="usuario" id="user" placeholder="Nombre Usuario" class="intxt" required>
+                            </li>
+                            <li class="clubkop__listCenter">
+                                <label for="name" name="name" class="colorCrema_op">Contraseña</label>
+                                <input type="password" name="password" class="intxt" placeholder="Ingresa tu Contraseña"
+                                    id="password" required>
+                            </li>
+                            <li class="clubkop__listCenter">
+                                <!-- <button id="btn-iniciar">INGRESAR</button> -->
+                                <button class="boton txtBoton colorCrema" id="btn-ingresar">INGRESAR</button>
+                                 <!-- <input type="submit" class="boton txtBoton colorCrema" value="INGRESAR" id="btn-iniciar"> -->
+                            </li>
+                            
+                        </ul>
+                    <!-- </form> -->
+                </div>
+            </div>
+            <div >
+                <button class="boton txtBoton colorCrema botonCS " type="button" id="btn-cerrarSesion"  >CERRAR SESION</button>
             </div>
         </section>
     </main>
@@ -207,7 +214,9 @@
     <script>
         AOS.init();
     </script>
-     <script src="./js/index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script type="module" src="./script/index.js"></script>
+    
 </body>
 
 </html>
