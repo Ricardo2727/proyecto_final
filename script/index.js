@@ -109,7 +109,7 @@ console.log(BBDD);
 async function obtenerDatosClima(latitud, longitud, apiKey) {
     try {
         // Construir la URL de la solicitud
-        const apiUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${latitud}&lon=${longitud}&appid=${apiKey}`;
+        const apiUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${latitud}&lon=${longitud}&appid=${apiKey}&lang=es`;
 
         // Realizar la solicitud a la API de OpenWeatherMap
         const response = await fetch(apiUrl);
@@ -146,7 +146,7 @@ obtenerDatosClima(-34.6132, -58.3772, 'bb76530cf57b347736e163adc36c0b8e')
             const img = document.createElement("img")
             const h4 = document.createElement ("h4")
             const h5 = document.createElement ("h5")
-            
+            const h6 = document.createElement ("h6")
             const icon = clima.icon
             
             
@@ -157,8 +157,9 @@ obtenerDatosClima(-34.6132, -58.3772, 'bb76530cf57b347736e163adc36c0b8e')
             div.className = "Clima"
             h4.innerText = temp + "°"
             h5.innerText= ciudad
-            
+            h6.innerText= FirstLetter(clima.description);
             div.appendChild(img)
+            div.appendChild(h6)
             div.appendChild(h4)
             div.appendChild(h5)
             
@@ -171,3 +172,8 @@ obtenerDatosClima(-34.6132, -58.3772, 'bb76530cf57b347736e163adc36c0b8e')
         // Aquí puedes realizar cualquier operación con los datos de clima que hayas obtenido
     })
     .catch(error => {console.error('Hubo un error al obtener los datos de clima:', error)});
+
+// Función para la primera letra de una cadena
+function FirstLetter(string) {
+    return string.charAt(0).toUpperCase() + string.slice(1).toLowerCase();
+}
