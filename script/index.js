@@ -138,7 +138,7 @@ obtenerDatosClima(-34.6132, -58.3772, 'bb76530cf57b347736e163adc36c0b8e')
         const contenedorClima = document.querySelector("#contenedorClima")
         const ciudad = data.name;
         const temp = (data.main.temp / 10).toFixed(1);
-        console.log(ciudad);
+        
 
         data.weather.forEach((clima)=> {
 
