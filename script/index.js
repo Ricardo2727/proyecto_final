@@ -104,3 +104,70 @@ if (botonCerrarSesion !== null) {
 
 console.log(BBDD);
 
+
+// Función para obtener los datos de clima por coordenadas
+async function obtenerDatosClima(latitud, longitud, apiKey) {
+    try {
+        // Construir la URL de la solicitud
+        const apiUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${latitud}&lon=${longitud}&appid=${apiKey}`;
+
+        // Realizar la solicitud a la API de OpenWeatherMap
+        const response = await fetch(apiUrl);
+        
+        // Verificar si la solicitud fue exitosa
+        if (response.ok) {
+            // Convertir la respuesta a formato JSON y retornar los datos de clima
+            return await response.json();
+        } else {
+            // Si la solicitud no es exitosa, retornar null
+            return null;
+        }
+    } catch (error) {
+        console.error('Hubo un error:', error);
+        // En caso de error, retornar null
+        return null;
+    }
+}
+
+
+// Llamar a la función para obtener los datos de clima utilizando las coordenadas de Buenos Aires
+obtenerDatosClima(-34.6132, -58.3772, 'bb76530cf57b347736e163adc36c0b8e')
+    .then(data => {
+        console.log('Datos de clima de Buenos Aires:', data);
+
+        const contenedorClima = document.querySelector("#contenedorClima")
+        const ciudad = data.name;
+        const temp = (data.main.temp / 10).toFixed(1);
+        console.log(ciudad);
+
+        data.weather.forEach((clima)=> {
+
+            const div = document.createElement("div")
+            const img = document.createElement("img")
+            const h4 = document.createElement ("h4")
+            const h5 = document.createElement ("h5")
+            
+            const icon = clima.icon
+            
+            
+            const imgURL = "https://openweathermap.org/img/wn/"+ icon + "@2x.png"
+            
+           
+            img.src = imgURL
+            div.className = "Clima"
+            h4.innerText = temp + "°"
+            h5.innerText= ciudad
+            
+            div.appendChild(img)
+            div.appendChild(h4)
+            div.appendChild(h5)
+            
+            contenedorClima.appendChild(div)
+            
+        })
+
+  
+
+        // Aquí puedes realizar cualquier operación con los datos de clima que hayas obtenido
+    })
+    .catch(error => {console.error('Hubo un error al obtener los datos de clima:', error)});

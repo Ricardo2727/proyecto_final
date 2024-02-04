@@ -261,7 +261,16 @@ a {
   justify-content: flex-end;
   align-items: none;
 }
-
+.Clima {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 1px;
+  align-items: center;
+  margin: 10px;
+  padding: 10px;
+  
+}
 .header__menuNav {
   display: flex;
   flex-direction: none;
@@ -287,6 +296,14 @@ a {
     align-items: center;
   }
 }
+
+.Clima {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 1px;
+  align-items: center;
+}
 @media (max-width: 370px) {
   .header__menuNav {
     display: flex;
@@ -296,6 +313,14 @@ a {
     justify-content: center;
     align-items: center;
   }
+}
+
+.Clima {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 1px;
+  align-items: center;
 }
 
 .header__logo {
