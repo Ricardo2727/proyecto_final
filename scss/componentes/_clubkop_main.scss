@@ -1,3 +1,21 @@
 #main_clubkop_ben{
     background-color: $cNaranja;
 }
+
+.popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(133, 23, 43);
+    padding: 20px;
+    border: 1px solid black;
+    z-index: 999;
+}
+.cerrarPopup {
+        position: absolute;
+        top: 5px;
+        right: 5px;
+        cursor: pointer;
+    }
