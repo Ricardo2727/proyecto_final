@@ -97,7 +97,7 @@ const productos = [
 ]
 
 //query selector de la tienda
-let carrito = []
+export let carrito = []
 const productosCont = document.querySelector("#productosContenedor")
 const carritoCont = document.querySelector("#carritoContenedor")
 const verCarrito = document.querySelector("#verCarrito")
@@ -156,7 +156,6 @@ verCarrito.addEventListener('click', () => {
         const vaciarCarritoBtn = document.getElementById('vaciarCarrito');
         vaciarCarritoBtn.addEventListener('click', () => {
             carritoCont.innerHTML = '';
-
             // Limpiar el carrito y el localStorage
             carrito = [];
             localStorage.removeItem('carrito');
@@ -232,5 +231,6 @@ if (isLog.usuario === undefined) {
     tienda.style.display = "block";
 
 }
+
 
 

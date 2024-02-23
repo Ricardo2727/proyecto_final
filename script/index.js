@@ -1,4 +1,7 @@
 
+
+
+
 export const BBDD = JSON.parse(localStorage.getItem("BBDD")) || [
     {
         nombre: "Ricardo",
@@ -15,6 +18,10 @@ export const BBDD = JSON.parse(localStorage.getItem("BBDD")) || [
 ]
 
 export const isLog = JSON.parse(localStorage.getItem("isLog")) ?? {}
+
+
+
+
 
 const botonIngresar = document.querySelector("#btn-ingresar");
 const contenedor = document.querySelector("#contenedorUsuario");
@@ -95,6 +102,7 @@ if (botonUnirme !== null) {
 if (botonCerrarSesion !== null) {
     botonCerrarSesion.addEventListener("click", () => {
         localStorage.removeItem("isLog");
+        localStorage.removeItem('carrito');
         window.location.href = "./index.html";
     })
 }
