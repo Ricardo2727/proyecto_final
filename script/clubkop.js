@@ -1,12 +1,12 @@
 import { BBDD } from "./index.js";
 import { isLog } from "./index.js";
-console.log(isLog.usuario);
+
 
 
 const contenedor2 = document.querySelector("#userOffLog");
 const formularioInscripcion = document.getElementById("formularioInscripcion");
 
-
+//animacion de pagina club kop si usuario no esta logeado
 if (isLog.usuario === undefined) {
     if (contenedor2) {
         contenedor2.innerHTML = `<div id="userOffLog"></div>`;
@@ -18,17 +18,17 @@ if (isLog.usuario === undefined) {
 
 
 document.getElementById("btn-inscribirse").addEventListener("click", function () {
-    // Obtener valores del formulario
+    // para sacar los valores del formulario
     const nombre = document.getElementById("nombre").value;
     const correo = document.getElementById("correo").value;
     const usuario = document.getElementById("usuario").value;
     const contrasena = document.getElementById("contrasena").value;
 
-    // Verificar si el usuario ya existe en la base de datos
+    // check si el usuario ya existe en la BBDD
     const usuarioExistente = BBDD.find((persona) => persona.usuario === usuario);
 
     if (usuarioExistente) {
-        console.log("El nombre de usuario ya está en uso. Por favor, elige otro.");
+
         Swal.fire({
             title: "¡Usuario existente!",
             text: "El nombre de usuario ya está en uso. Por favor, elige otro.",
@@ -43,10 +43,10 @@ document.getElementById("btn-inscribirse").addEventListener("click", function ()
             email: correo
         };
 
-        // Agregar el nuevo usuario a la base de datos
+        // agrega nuevo usuario a la base de datos
         BBDD.push(nuevoUsuario);
 
-        // Puedes almacenar la base de datos actualizada en localStorage si lo necesitas
+        // BBDD actualizada en localStorage
         localStorage.setItem("BBDD", JSON.stringify(BBDD));
 
         // Puedes redirigir a otra página, mostrar un mensaje, etc.
@@ -58,7 +58,7 @@ document.getElementById("btn-inscribirse").addEventListener("click", function ()
             icon: "success"
         });
 
-        // Limpiar el formulario
+        // se limpia el formulario
         formularioInscripcion.reset();
     }
 });
@@ -67,7 +67,7 @@ document.getElementById("btn-inscribirse").addEventListener("click", function ()
 
 
 
-
+// lista de productos
 const productos = [
     {
         nombre: 'Bolsa reutilizable',
@@ -96,46 +96,22 @@ const productos = [
     },
 ]
 
-
-
-
-
-
+//query selector de la tienda
 let carrito = []
 const productosCont = document.querySelector("#productosContenedor")
 const carritoCont = document.querySelector("#carritoContenedor")
 const verCarrito = document.querySelector("#verCarrito")
 const tienda = document.querySelector("#tienda")
 
-// Cargar los elementos del carrito desde el localStorage
+// carga los productos del carrito desde el localStorage
 if (localStorage.getItem('carrito')) {
     carrito = JSON.parse(localStorage.getItem('carrito'));
 }
-// verCarrito.addEventListener('click', () => {
 
-
-//     if (carrito.length === 0) {
-//         // carritoContenido.innerHTML = '<p>Carrito vacío</p>';
-//         Swal.fire({
-//             title: "¡"+ isLog.usuario + ",  tu Carrito de compras está vacío!",
-//             text: "Hacé click en 'Agregar Producto' segun tu preferencia",
-//             icon: "warning"
-//         });
-//     } else {
-//         carritoCont.innerHTML = '';
-//         carrito.forEach((prodCarrito) => {
-//             carritoCont.innerHTML += `
-//                 <div>
-//                     <img src="${prodCarrito.imagen}">
-//                     <p>Nombre: ${prodCarrito.nombre}</p>
-//                     <p>Precio: ${prodCarrito.precio}</p>
-//                 </div>`;
-//         });
-//     }
-// });
-
+// al hcaer click en el carrito
 verCarrito.addEventListener('click', () => {
     if (carrito.length === 0) {
+        //popup carrito vacío
         Swal.fire({
             title: "¡" + isLog.usuario + ",  tu Carrito de compras está vacío!",
             text: "Hacé click en 'Agregar Producto' según tu preferencia",
@@ -146,6 +122,7 @@ verCarrito.addEventListener('click', () => {
         // agrego título al carrito
         carritoCont.innerHTML += '<h2 class= "tamMediano colorCafe">Carrito de Compras</h2>';
 
+        //recorre array prodCarrito para armar lo que muestra al hacer click al carrito
         carrito.forEach((prodCarrito) => {
             carritoCont.innerHTML += `
                 <div class="cardCarrito">
@@ -174,10 +151,12 @@ verCarrito.addEventListener('click', () => {
         cerrarCarritoBtn.addEventListener('click', () => {
             carritoCont.innerHTML = '';
         });
+
         // click para botón vaciar
         const vaciarCarritoBtn = document.getElementById('vaciarCarrito');
         vaciarCarritoBtn.addEventListener('click', () => {
             carritoCont.innerHTML = '';
+
             // Limpiar el carrito y el localStorage
             carrito = [];
             localStorage.removeItem('carrito');
@@ -186,10 +165,7 @@ verCarrito.addEventListener('click', () => {
 });
 
 
-
-
-console.log(productosCont);
-console.log(carritoCont);
+//creando cards productos
 productos.forEach((producto) => {
 
     const div = document.createElement('div')
@@ -208,12 +184,12 @@ productos.forEach((producto) => {
         <input type="number" id="cantidad-${producto.nombre}" value="1" min="1" max="10">
         <button class="btnProd">Agregar producto</button>
     </div>
-`;
+    `;
 
     // solo el resultado del botón dentro del div
     const btnAgregarProducto = boton.querySelector('.btnProd');
-    
-    // agrego el evento de click al botón para mandar al carrito
+
+    // evento click al botón agregar producto para mandar producto al carrito
     btnAgregarProducto.addEventListener('click', () => {
         const cantidad = parseInt(document.getElementById(`cantidad-${producto.nombre}`).value);
         const productoExistente = carrito.find(item => item.nombre === producto.nombre);
@@ -242,17 +218,14 @@ productos.forEach((producto) => {
         });
     });
 
-
-
     div.appendChild(boton)
-
     productosCont.appendChild(div)
 })
 
 
 
 if (isLog.usuario === undefined) {
-    // si no hay usuario definido, ocultar la sección tienda
+    // si no hay usuario logueado, ocultar la sección tienda
     tienda.style.display = "none";
 } else {
     // Si hay usuario definido, mostrar la sección tienda

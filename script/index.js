@@ -22,7 +22,7 @@ const inputs = document.querySelectorAll("input");
 const botonUnirme = document.querySelector("#btn-unirme");
 const botonCerrarSesion = document.querySelector("#btn-cerrarSesion");
 
-
+// rellena si usuario logeado 
 const rellenar = (nombre) => {
     if (contenedor !== null) {
         contenedor.innerHTML = `<h2 id="contenedorUsuario" class="colorCrema tamGrande focus-in-contract-bck"> ${nombre}, Bienvenido a Club KOP nuevamente!</h2> 
@@ -49,11 +49,10 @@ inputs.forEach((input) => {
     input.addEventListener("input", (event) => {
         const { name, value } = event.target
         usuarioALoguear[name] = value
-
     })
 })
 
-console.log(usuarioALoguear);
+// ingresar para buscar usuario existente
 if (botonIngresar !== null) {
 
     botonIngresar.addEventListener("click", () => {
@@ -64,7 +63,7 @@ if (botonIngresar !== null) {
 
         if (siExiste !== undefined) {
             localStorage.setItem("isLog", JSON.stringify({ usuario: usuarioALoguear.usuario }))
-            console.log(usuarioALoguear);
+            
             contenedor.innerHTML = `<h2 id="contenedorUsuario" class="colorCrema tamGrande focus-in-contract-bck"> ${siExiste.usuario}, Bienvenido a Club KOP nuevamente!</h2> 
             <ul class="clubkop__padNone clubkop__flex">
                 <li>
@@ -74,14 +73,13 @@ if (botonIngresar !== null) {
                 </li>
             </ul>`
         } else {
-            console.log("Usuario no registrado")
+            //si no existe popup
             Swal.fire({
                 title: "¡Usuario no registrado!",
                 text: "Registrate y disfruta de los beneficios de Club KOP",
                 icon: "error"
             });
         }
-
     })
 }
 
@@ -101,11 +99,8 @@ if (botonCerrarSesion !== null) {
     })
 }
 
-
-console.log(BBDD);
-
-
-// Función para obtener los datos de clima por coordenadas
+// aplicacion de API
+// Fn para obtener los datos de clima por coordenadas
 async function obtenerDatosClima(latitud, longitud, apiKey) {
     try {
         // Construir la URL de la solicitud
@@ -167,13 +162,11 @@ obtenerDatosClima(-34.6132, -58.3772, 'bb76530cf57b347736e163adc36c0b8e')
             
         })
 
-  
-
         // Aquí puedes realizar cualquier operación con los datos de clima que hayas obtenido
     })
     .catch(error => {console.error('Hubo un error al obtener los datos de clima:', error)});
 
-// Función para la primera letra de una cadena
+// Fn para la primera letra de una cadena
 function FirstLetter(string) {
     return string.charAt(0).toUpperCase() + string.slice(1).toLowerCase();
 }
